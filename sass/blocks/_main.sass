@@ -1,0 +1,117 @@
+.main
+	margin-bottom: 108px
+	&__title
+		font-family: 'Playfair Display', serif
+		font-weight: bold
+		font-size: 48px
+		line-height: 64px
+		margin-bottom: 7px
+	&__subtitle
+		display: inline-block
+		font-weight: normal
+		font-size: 20px
+		line-height: 23px
+		color: #787878
+		margin-bottom: 38px
+	&-info
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&__movie
+			display: flex
+			align-items: center
+		&__name
+			padding: 5px 10px
+			background: #FFFFFF
+			border-radius: 3px
+			font-weight: normal
+			font-size: 16px
+			line-height: 19px
+			color: #333333
+			margin-right: 20px
+		&__country
+			font-weight: normal
+			font-size: 16px
+			line-height: 19px
+			margin-right: 33px
+		&__watch
+			display: flex
+			align-items: center
+			font-size: 16px
+			line-height: 19px
+			color: #FFFFFF
+			&::before
+				content: ''
+				display: inline-block
+				min-width: 30px
+				height: 30px
+				background-image: url('../img/main/play.svg')
+				background-size: 100%
+				background-repeat: no-repeat
+				margin-right: 15px
+		&__more
+			display: flex
+			align-items: center
+			color: #FFFFFF
+			font-weight: normal
+			font-size: 16px
+			line-height: 19px
+			text-align: right
+			&::after
+				content: ''
+				display: inline-block
+				min-width: 30px
+				height: 30px
+				background-image: url('../img/main/play.svg')
+				background-size: 100%
+				background-repeat: no-repeat
+				margin-left: 15px
+				transform: rotate(90deg)
+
+@media screen and ( max-width: 768px )
+	.main-info
+		&__more
+			display: none
+@media screen and ( max-width: 576px )
+	.main
+		margin-bottom: 80px
+		&__title
+			font-family: 'Playfair Display', serif
+			font-weight: bold
+			font-size: 42px
+			line-height: 64px
+			margin-bottom: 7px
+		&__subtitle
+			display: inline-block
+			font-weight: normal
+			font-size: 18px
+			line-height: 23px
+			color: #787878
+			margin-bottom: 30px
+		&-info
+			display: flex
+			align-items: center
+			justify-content: space-between
+			&__movie
+				display: flex
+				align-items: center
+			&__name
+				padding: 5px 10px
+				background: #FFFFFF
+				border-radius: 3px
+				font-weight: normal
+				font-size: 14px
+				line-height: 19px
+				color: #333333
+				margin-right: 20px
+			&__country
+				font-weight: normal
+				font-size: 14px
+				line-height: 19px
+				margin-right: 33px
+			&__watch
+				display: flex
+				align-items: center
+				font-size: 14px
+				line-height: 19px
+				color: #FFFFFF
